@@ -1,0 +1,96 @@
+# Python / MkDocs
+.venv/
+site/
+mkdocs-server*.log
+__pycache__/
+*.py[cod]
+
+# Sistema operacional e editores
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Arquivos grandes recebidos/exportados
+Modelos/
+Torno/
+*.ova
+*.ovf
+*.vmdk
+*.mf
+*.zip
+*.7z
+*.rar
+
+# FBX duplicados / recebidos na raiz
+torno(1).fbx
+
+# Unity - pastas de assets pesados (Asset Store, não são nosso trabalho)
+Projetinho/TornoREV2/Assets/Free/
+Projetinho/TornoREV2/Assets/Free.meta
+Projetinho/TornoREV2/Assets/ADG_Textures/
+Projetinho/TornoREV2/Assets/ADG_Textures.meta
+Projetinho/TornoREV2/Assets/Samples/
+Projetinho/TornoREV2/Assets/Samples.meta
+
+# Unity - pastas geradas (não versionar)
+Projetinho/TornoREV2/Library/
+Projetinho/TornoREV2/Temp/
+Projetinho/TornoREV2/Logs/
+Projetinho/TornoREV2/obj/
+Projetinho/TornoREV2/Builds/
+Projetinho/TornoREV2/UserSettings/
+Projetinho/TornoREV2/.vs/
+
+# Unity - cenas de recuperação automática
+Projetinho/TornoREV2/Assets/_Recovery/
+Projetinho/TornoREV2/Assets/_Recovery.meta
+
+# Backups locais (ficam fora do Git)
+Backups/
+
+# Unity - pastas geradas localmente
+**/Library/
+**/Temp/
+**/Obj/
+**/Build/
+**/Builds/
+**/Logs/
+**/UserSettings/
+**/MemoryCaptures/
+**/Recordings/
+
+# Unity - arquivos temporarios
+*.csproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Unity / Visual Studio cache
+.vs/
+.gradle/
+
+# Pacotes Android/Unity gerados
+*.apk
+*.aab
+*.unitypackage
+
+# Observacao:
+# O modelo .fbx pequeno pode ser versionado se fizer sentido.
+# Para modelos grandes, prefira Git LFS.
+
+# Agents Files (arquivos internos dos agentes — não versionar)
+claude.md
+.claude/
+# Exceção: CLAUDE.md é o arquivo de instruções do projeto (deve ser versionado)
+!CLAUDE.md
