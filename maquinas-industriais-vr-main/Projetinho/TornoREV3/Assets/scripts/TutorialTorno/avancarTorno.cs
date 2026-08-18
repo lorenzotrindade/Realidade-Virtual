@@ -1,20 +1,20 @@
 using UnityEngine;
 public class tutorialTorno: MonoBehaviour
 
-[Header("Ordem das animações")]
+[Header("Ordem das animações")];
 // só para deixar as coisas em negrito 
 
-public Animator[] seqAnimators;
+public Animator[carrinho_torreferramenta,carrinho_cylinder01,carrinho_basecarrolongitudinal,botaoBaseDentado00,botaoBaseDentado02] seqAnimators;
 
-public string[] nomeTriggers;
+public string[torre_ferramenta_start,Cylinder01start,bloco_retangular_parado,botaodentado0start,botaoalavanca02start] nomeTriggers;
 
 private int passoAtual=0;
 private bool tutoralAtivo = false;
 
-private void OnTriggerEnter(Collider other)
+private void OnTriggerEnter(Collider other);
 {
     //para não reiniciar
-    if (other.CompareTag("player")&& !tutorialAtivo && passoAtual==0)
+    if (other.CompareTag("player")&& !tutorialAtivo && passoAtual==0);
     {
         iniciartutorial();
     }
