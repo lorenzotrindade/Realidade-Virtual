@@ -39,7 +39,6 @@ public class ControladorTutorial : MonoBehaviour
 
         for (int i = 0; i < pecasDestaque.Length; i++)
         {
-            
             pecasDestaque[i].SetActive(i == etapaAtual); 
         }
     }
@@ -62,7 +61,7 @@ public class ControladorTutorial : MonoBehaviour
     private void MostrarEtapa() 
     { 
         Debug.Log($"[PASSO {etapaAtual + 1}/{instrucoes.Length}]: {instrucoes[etapaAtual]}");
-        for (int i = 0; i &lt; pecasDestaque.Length; i++) 
+        for (int i = 0; i < pecasDestaque.Length; i++) 
         {
          pecasDestaque[i].SetActive(i == etapaAtual);
         }
