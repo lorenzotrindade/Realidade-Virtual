@@ -39,8 +39,31 @@ public class ControladorTutorial : MonoBehaviour
 
         for (int i = 0; i < pecasDestaque.Length; i++)
         {
-            
             pecasDestaque[i].SetActive(i == etapaAtual); 
+        }
+    }
+    public void AvancarEtapa()
+    {
+        if(instrucoes.Length - 1) 
+        { 
+          etapaAtual ++; 
+          MostrarEtapa();
+         }
+    }
+    public void VoltarEtapa()
+    {
+        if (etapaAtual > 0) 
+        {
+             etapaAtual--;
+             MostrarEtapa();
+        }
+    }
+    private void MostrarEtapa() 
+    { 
+        Debug.Log($"[PASSO {etapaAtual + 1}/{instrucoes.Length}]: {instrucoes[etapaAtual]}");
+        for (int i = 0; i < pecasDestaque.Length; i++) 
+        {
+         pecasDestaque[i].SetActive(i == etapaAtual);
         }
     }
 }
