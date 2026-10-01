@@ -34,9 +34,7 @@ public class ControladorTutorial : MonoBehaviour
     }
     void MostrarEtapa()
     {
-      
         Debug.Log($"[PASSO {etapaAtual + 1}/20]: {instrucoes[etapaAtual]}");
-
         for (int i = 0; i < pecasDestaque.Length; i++)
         {
             pecasDestaque[i].SetActive(i == etapaAtual); 
@@ -44,7 +42,7 @@ public class ControladorTutorial : MonoBehaviour
     }
     public void AvancarEtapa()
     {
-        if(instrucoes.Length - 1) 
+        if(etapaAtual < instrucoes.Length - 1)  // tem q ser um resultado boleano
         { 
           etapaAtual ++; 
           MostrarEtapa();
@@ -56,14 +54,6 @@ public class ControladorTutorial : MonoBehaviour
         {
              etapaAtual--;
              MostrarEtapa();
-        }
-    }
-    private void MostrarEtapa() 
-    { 
-        Debug.Log($"[PASSO {etapaAtual + 1}/{instrucoes.Length}]: {instrucoes[etapaAtual]}");
-        for (int i = 0; i < pecasDestaque.Length; i++) 
-        {
-         pecasDestaque[i].SetActive(i == etapaAtual);
         }
     }
 }

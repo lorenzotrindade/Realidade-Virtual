@@ -1,4 +1,4 @@
-using UnityEngine;
+    using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.EnhancedTouch;
 using UnityEngine.UI;
@@ -7,7 +7,7 @@ using Touch = UnityEngine.InputSystem.EnhancedTouch.Touch;
 
 public class UnityRemoteTestScript : MonoBehaviour
 {
-    public Camera camera;
+    public new Camera camera;
 
     public Text accelerometerInputText;
     public Text touchInputText;
